@@ -1,0 +1,36 @@
+﻿<style>
+           * {
+               margin: 0;
+               padding: 0
+               position:fixed;
+               margin-top: 0px !important;
+           }
+       </style>
+
+       <!-- Paste the following into the <head>  -->
+<script type="text/javascript" src="clappr.min.js"></script>
+
+<style>
+#clappr{ width: 100%;height: 100%;position: relative; min-height: 340px; margin-bottom: 0px;}
+#clappr > div{ width:100%;height:100%;position: absolute;}
+</style>
+
+
+<!-- Paste the following into the <body> -->
+
+<div id="clappr"></div>
+<script>
+var player = new Clappr.Player({
+source:
+ "https://playplusspo-lh.akamaihd.net/i/pp_sp@350176/index_720_av-p.m3u8?sd=10&rebase=on"
+,
+parentId: "#clappr",
+width: '100%',
+height: '100%',
+autoPlay: true,
+poster: "model.png",
+
+//gaAccount: 'UA-44332211-1',
+//gaTrackerName: 'MyPlayerInstance'
+});
+</script>
